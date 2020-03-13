@@ -1,0 +1,16 @@
+<div class="card">
+    <div class="card-header">
+        {{question.question}}
+    </div>
+    <div class="card-body">
+        <div *ngFor="let option of question.options; let i=index">
+            <input type="radio" [value]="option"
+                [checked]="(question.userAnswer ? option ===
+                question.userAnswer: false)"
+                name="option"
+                [title]="option"
+                id="value-{{i}}" (click)="selectOption(option)" />
+            <label for="value-{{i}}">{{option}}</label>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,48 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  background: #f0f0f0;
+}
+.btn {
+  background: rgb(216, 216, 216);
+  border: none;
+  color: white;
+  border-radius: 4px;
+  padding: 8px 10px;
+  margin: 5px;
+  box-shadow: 2px 2px 2px 2px #c2c1c1;
+  cursor: pointer;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn-primary {
+  background: #1976d2;
+}
+
+.btn-secondary {
+  background: #858383;
+}
+
+.btn-warning {
+  background: #fabe3c;
+}
+
+.btn:disabled {
+  opacity: 0.4;
+}
+
+.card {
+  padding: 30px;
+  font-size: 20px;
+  font-family: cursive;
+  font-weight: 100;
+  background: #fff;
+  box-shadow: 2px 2px 2px #cecece;
+  border-radius: 10px;
+  border: solid 1px #e2e2e2;
+  position: relative;
+}

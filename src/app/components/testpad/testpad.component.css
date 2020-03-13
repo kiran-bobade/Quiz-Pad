@@ -1,0 +1,17 @@
+:host {
+  width: 70%;
+}
+.question-container {
+  min-height: 150px;
+  width: 100%;
+  align-self: flex-end;
+  align-content: space-between;
+  justify-content: space-between;
+}
+
+.test-controls {
+  display: flex;
+  align-self: flex-end;
+  align-content: space-between;
+  justify-content: space-between;
+}

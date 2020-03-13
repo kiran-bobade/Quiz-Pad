@@ -1,0 +1,17 @@
+.card {
+  padding: 30px;
+  font-size: 20px;
+  font-family: cursive;
+  font-weight: 100;
+  background: #fff;
+  box-shadow: 2px 2px 2px #cecece;
+  border-radius: 10px;
+  border: solid 1px #e2e2e2;
+}
+.card-header {
+}
+
+.card-body {
+  font-size: 14px;
+  margin-top: 10px;
+}

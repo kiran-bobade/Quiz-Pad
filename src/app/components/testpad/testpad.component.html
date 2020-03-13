@@ -1,0 +1,26 @@
+<ng-container *ngIf="questionList && !testResult">
+    <ng-container *ngFor="let question of questionList.questions;">
+        <div class="question-container">
+            <app-question [question]="question"></app-question>
+        </div>
+    </ng-container>
+    <div class="test-controls">
+        <button [disabled]="currentQuestionIndex == 0"
+            class="btn
+            btn-large
+            btn-secondary" (click)="previous()"> Previous
+        </button>
+        <button
+            *ngIf="(currentQuestionIndex <questionList.total-1)"
+            class="btn btn-large btn-primary" (click)="next()"> Next
+        </button>
+        <button
+            *ngIf="(currentQuestionIndex === questionList.total-1)"
+            [disabled]="finished"
+            class="btn btn-large btn-primary" (click)="finish()"> Submit
+        </button>
+    </div>
+</ng-container>
+<ng-container *ngIf="testResult">
+    <app-test-result [result]="testResult"></app-test-result>
+</ng-container>
