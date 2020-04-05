@@ -4,5 +4,7 @@
   align-content: center;
   justify-content: center;
   align-items: center;
-  height: 80vh;
+  height: 91vh;
+  padding: 20px;
+  background-color: #e1e6ec;
 }

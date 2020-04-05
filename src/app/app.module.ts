@@ -9,6 +9,7 @@ import { WelcomeComponent } from './components/welcome/welcome.component';
 import { QuestionComponent } from './components/question/question.component';
 import { TestpadComponent } from './components/testpad/testpad.component';
 import { TestResultComponent } from './components/test-result/test-result.component';
+import { TooltipDirective } from './directives/tooltip.directive';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { TestResultComponent } from './components/test-result/test-result.compon
     WelcomeComponent,
     QuestionComponent,
     TestpadComponent,
-    TestResultComponent
+    TestResultComponent,
+    TooltipDirective
   ],
   imports: [
     BrowserModule,

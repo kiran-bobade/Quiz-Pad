@@ -10,6 +10,7 @@ import { QuizPadService } from 'src/app/services/quiz-pad.service';
 export class QuestionComponent implements OnInit {
 
   @Input() question: Question;
+  tooltip = 'this is the text of a tooltip';
 
   constructor(private readonly quizeService: QuizPadService) { }
 

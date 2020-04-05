@@ -1,0 +1,57 @@
+<div class="container">
+    <form #f="ngForm" novalidate>
+        <fieldset ngModelGroup="name">
+            <div class="form-group">
+                <label for="firstName">First Name</label>
+
+                <input type="text" name="firstName" ngModel #firstName="ngModel"
+                    class="form-control"
+                    id="fistName" required
+                    minlength="3"
+                    (ngModelChange)="log(firstName)">
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" name="lastName" ngModel #lastName="ngModel"
+                    class="form-control"
+                    id="lastName" required
+                    minlength="3">
+            </div>
+        </fieldset>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" name="email" ngModel #email="ngModel"
+                class="form-control"
+                id="email" required email>
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" name="password" ngModel #password="ngModel"
+                class="form-control"
+                id="password" required>
+        </div>
+        <div>
+            <button class="btn btn-primary btn-lg" style="">Submit</button>
+        </div>
+    </form>
+    <!-- <div class="validation-summary" *ngIf="(f.dirty || f.touched ) &&
+        f.invalid">
+        <div>
+            <label *ngIf="firstName.touched && firstName.errors?.required">First
+                name is Required</label>
+            <label *ngIf="firstName.touched && firstName.errors?.minlength">First
+                name shoulde have
+                minimum 3 letters</label>
+            <label *ngIf="lastName.touched && lastName.errors?.required">Last
+                name is Required</label>
+            <label *ngIf="lastName.touched && lastName.errors?.minlength">Last
+                name shoulde have
+                minimum 3 letters</label>
+            <label *ngIf="email.touched && email.errors?.required">Email is
+                required </label>
+            <label *ngIf="email.touched && email.errors?.email">Invalid email</label>
+            <label *ngIf="password.touched && password.errors?.required">
+                Password is required </label>
+        </div>
+    </div> -->
+</div>

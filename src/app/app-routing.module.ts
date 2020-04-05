@@ -7,6 +7,7 @@ import { TestpadComponent } from './components/testpad/testpad.component';
 const routes: Routes = [
   { path: '', component: WelcomeComponent },
   { path: 'testpad', component: TestpadComponent },
+  { path: 'forms', loadChildren: () => import('./form/form.module').then(mod => mod.FormModule) },
   { path: '**', component: WelcomeComponent }
 ];
 

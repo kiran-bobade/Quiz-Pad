@@ -1,0 +1,49 @@
+.validation-summary label {
+  display: block;
+}
+
+.container {
+  background-color: #e1e6ec;
+  padding: 30px 20px;
+  border-radius: 25px;
+  width: 350px;
+  box-shadow: 7px 4px 21px 0px #bac1d3, -4px -5px 30px 3px #fdfdfd;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  padding: 10px 20px;
+  background: #e1e6ec;
+  box-shadow: inset 5px 6px 5px -2px #ccc, inset -6px -8px 18px -8px #fff;
+  border: 3px solid #ced2d8;
+  border-radius: 10px;
+}
+
+input.ng-invalid.ng-prestine,
+input.ng-invalid.ng-touched,
+input.ng-invalid.ng-dirty {
+  box-shadow: inset 5px 6px 5px -2px #ffadad, inset -6px -8px 18px -8px #fff4f4;
+}
+
+input.ng-valid {
+  box-shadow: inset 5px 6px 5px -2px #abccaa, inset -6px -8px 18px -8px #f5fff4;
+}
+
+.btn {
+  background: #e1e6ec;
+  border: none;
+  /* color: #e1e6ec; */
+  margin-top: 20px;
+  width: 100%;
+  border-radius: 14px;
+  box-shadow: 2px 4px 7px 1px #bac1d3, -4px -2px 25px -1px #fdfdfd;
+  text-shadow: 1px 3px 2px #bac1d3, -1px 0px 7px #fdfdfd;
+  font-size: 30px;
+  color: #0069d9;
+  font-weight: bold;
+}
+.btn:hover {
+  box-shadow: inset 2px 4px 7px 1px #bac1d3, inset -4px -2px 25px -1px #fdfdfd;
+  color: #9ac6f1;
+}

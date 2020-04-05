@@ -1,6 +1,6 @@
 <div class="card">
     <div class="card-header">
-        {{question.question}}
+        {{question.question}} <span [appTooltip]="tooltip">(help)</span>
     </div>
     <div class="card-body">
         <div *ngFor="let option of question.options; let i=index">
